@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Formulario de cadastro</title>
+</head>
+<body>
+    <h1>Formulario de cadastro</h1>
+    <hr>
+    <div class="container">
+        <form action="">
+            <div class="input-nome">
+                <label for="nome">Nome completo <br />
+                    <input type="text" name="nome" id="nome" size="100" placeholder="Digite seu nome completo">
+                </label>
+            </div>
+            <div class="linha2">
+                <div class="input-data-de-nascimento">
+                    <label for="data-de-nascimento">Data de nascimento <br />
+                        <select name="dia" id="dia">Dia</select>
+                        <select name="mes" id="mes">Mês</select>
+                        <select name="ano" id="ano">Ano</select>
+                    </label>
+                </div>
+                <div class="input-estado-civil">
+                    <label for="estado-civil">Estado Civil  <br />
+                        <select name="estado-civil" id="estado-civil">Estado civil
+                            <option value="Selecione">Selecione...</option>
+                            <option value="c">Casado</option>
+                            <option value="s">Solteiro</option>
+                            <option value="d">Divorciado</option>
+                            <option value="v">Viuvo</option>
+                            <option value="u">União estável</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="CPF">
+                    <label for="CPF">CPF  <br />
+                        <input type="text" name="CPF" id="CPF"  placeholder="999.999.999-99">
+                    </label>
+                </div>
+                <div class="input-genero">
+                    <label for="genero">Genero <br />
+                        <input type="text" name="genero" id="genero">
+                    </label>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="index.js"></script>
+    
+</body>
+</html>
