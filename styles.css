@@ -1,5 +1,57 @@
-.linha2 {
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    margin-top: 2%;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+
+div {
+    display: inline-block;
+    margin-top: 1%;
+}
+
+.container {
     display: flex;
-    flex-direction: row;
+    /* border: 1px solid black; */
+    justify-content: center;
+    
+}
+
+.titulo, .subtitulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+input, select, textarea, button {
+    border-radius: 5px;
+}
+
+fieldset {
+    border: 0;
+}
+
+fieldset.input-data-de-nascimento .input-estado-civil .imput-CPF .input-genero {
+    float: left;
+    margin-right: 1rem;
+    display: flex;
+}
+
+#endereco {
+    width: 20rem;
+}
+
+#numero {
+    width: 5rem;
 }
 

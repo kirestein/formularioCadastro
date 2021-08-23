@@ -8,26 +8,32 @@
     <title>Formulario de cadastro</title>
 </head>
 <body>
-    <h1>Formulario de cadastro</h1>
-    <hr>
+    
+    <div class="titulo">
+        <h1 id="titulo">Formulario de cadastro</h1>
+    </div>
+    <hr />
+    <div class="subtitulo">
+        <h2 id="subtitulo">Dados pessoais</h2>
+    </div>
     <div class="container">
         <form action="">
             <div class="input-nome">
                 <label for="nome">Nome completo <br />
-                    <input type="text" name="nome" id="nome" size="100" placeholder="Digite seu nome completo">
+                    <input type="text" name="nome" id="nome" size="100" placeholder="Digite seu nome completo" required>
                 </label>
             </div>
-            <div class="linha2">
+            <fieldset>
                 <div class="input-data-de-nascimento">
                     <label for="data-de-nascimento">Data de nascimento <br />
-                        <select name="dia" id="dia">Dia</select>
-                        <select name="mes" id="mes">Mês</select>
-                        <select name="ano" id="ano">Ano</select>
+                        <select name="dia" id="dia" required>Dia</select>
+                        <select name="mes" id="mes" required>Mês</select>
+                        <select name="ano" id="ano" required>Ano</select>
                     </label>
                 </div>
                 <div class="input-estado-civil">
                     <label for="estado-civil">Estado Civil  <br />
-                        <select name="estado-civil" id="estado-civil">Estado civil
+                        <select name="estado-civil" id="estado-civil" required>Estado civil
                             <option value="Selecione">Selecione...</option>
                             <option value="c">Casado</option>
                             <option value="s">Solteiro</option>
@@ -37,17 +43,39 @@
                         </select>
                     </label>
                 </div>
-                <div class="CPF">
+                <div class="imput-CPF">
                     <label for="CPF">CPF  <br />
                         <input type="text" name="CPF" id="CPF"  placeholder="999.999.999-99">
                     </label>
                 </div>
                 <div class="input-genero">
                     <label for="genero">Genero <br />
-                        <input type="text" name="genero" id="genero">
+                        <input type="text" name="genero" id="genero" required>
                     </label>
                 </div>
+            </fieldset>
+            <div class="input-cep">
+                <label for="CEP">C.E.P. <br />
+                    <input type="text" name="CEP" id="CEP" placeholder="00000-000" required>
+                </label>
             </div>
+            <fieldset>
+                <div class="input-endereco">
+                    <label for="endereco">Endereço <br />
+                        <input type="text" name="endereco" id="endereco" placeholder="Escreva seu endereço aqui" required>
+                    </label>
+                </div>
+                <div class="input-numero">
+                    <label for="numero">Número <br />
+                        <input type="text" name="numero" id="numero" required>
+                    </label>
+                </div>
+                <div class="input-complemento">
+                    <label for="complemento">Complemento <br/>
+                        <input type="text" name="complemento" id="complemento" />
+                    </label>
+                </div>
+            </fieldset>
         </form>
     </div>
     <script src="index.js"></script>
