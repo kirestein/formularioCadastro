@@ -12,12 +12,12 @@
     <div class="titulo">
         <h1 id="titulo">Formulario de cadastro</h1>
     </div>
-    <hr />
-    <div class="subtitulo">
-        <h2 id="subtitulo">Dados pessoais</h2>
-    </div>
+   
     <div class="container">
-        <form action="">
+        <form class="dados-pessoais">
+            <div class="subtitulo">
+                <h2 id="subtitulo">Dados pessoais</h2>
+            </div>
             <div class="input-nome">
                 <label for="nome">Nome completo <br />
                     <input type="text" name="nome" id="nome" size="100" placeholder="Digite seu nome completo" required>
@@ -76,6 +76,46 @@
                     </label>
                 </div>
             </fieldset>
+            <fieldset class="bairro-cidade">
+                 <div class="input-bairro-cidade">
+                     <label for="bairro">Bairro <br/>
+                        <input type="text" name="bairro" id="bairro" placeholder="ex:. Liberdade"  required>
+                     </label>
+                 </div>
+                 <div class="input-cidade">
+                     <label for="cidade"> Cidade <br/>
+                         <input type="text" name="cidade" id="cidade" placeholder="São Paulo" required />
+                     </label>
+                 </div>
+                 <div class="input-estado">
+                     <label for="estado">Estado <br/>
+                        <input type="text" name="estado" id="estado" placeholder="SP" required />
+                     </label>
+                 </div>
+            </fieldset>
+            <fieldset class="contato">
+                <div class="input-fixo">
+                    <label for="fixo"> Telefone fixo <br/>
+                        <input type="tel" name="fixo" id="fixo" placeholder="(xx)xxxx-xxxx" required />
+                    </label>
+                </div>
+                <div class="input-celular">
+                    <label for="celular">Celular <br/>
+                        <input type="tel" name="celular" id="celular"  placeholder="(xx)x xxxx-xxxx" required />
+                    </label>
+                </div>
+                <div class="input-email">
+                    <label for="email">E-mail <br/>
+                        <input type="email" name="email" id="email" placeholder="seuemail@dominio.com" required />
+                    </label>
+                </div>
+            </fieldset>
+            <br/>  <br/>
+            <hr>
+            <div class="subtitulo">
+                <h2>Experiência Profissional</h2>
+            </div>
+
         </form>
     </div>
     <script src="index.js"></script>
