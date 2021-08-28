@@ -9,11 +9,14 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 1rem;
-    background-color: #6b0480d0;
+    background-color: #360341d0;
     color: #f3f2f2;
 }
-
+/* #2EF0B1
+#58920b
+ */
 form {
+    background-color: #17684e;
     border: 3px solid #f3f2f2;
     border-radius: 5px;
     padding: 1rem;
@@ -57,11 +60,20 @@ fieldset.input-data-de-nascimento .input-estado-civil .imput-CPF .input-genero {
     display: flex;
 }
 
-#endereco {
+#endereco, #email, #empresa {
     width: 20rem;
 }
 
 #numero {
     width: 5rem;
 }
+
+#instituicao {
+    width: 31rem;
+}
+
+#curso {
+    width: 41rem;
+}
+
 

@@ -25,10 +25,8 @@
             </div>
             <fieldset>
                 <div class="input-data-de-nascimento">
-                    <label for="data-de-nascimento">Data de nascimento <br />
-                        <select name="dia" id="dia" required>Dia</select>
-                        <select name="mes" id="mes" required>Mês</select>
-                        <select name="ano" id="ano" required>Ano</select>
+                    <label for="nascimento">Data de nascimento <br />
+                        <input type="date" name="nascimento" id="nascimento">
                     </label>
                 </div>
                 <div class="input-estado-civil">
@@ -115,7 +113,116 @@
             <div class="subtitulo">
                 <h2>Experiência Profissional</h2>
             </div>
-
+            <fieldset class="linha1">
+                <div class="input-nome-empresa">
+                    <label for="empresa">Nome da Empresa <br/>
+                        <input type="text" name="empresa" id="empresa" />
+                    </label>
+                </div>
+                <div class="input-cargo">
+                    <label for="cargo">Cargo <br/>
+                        <input type="text" name="cargo" id="cargo" />
+                    </label>
+                </div>
+                <div class="input-salario">
+                    <label for="salario">Último Salário <br/>
+                        <input type="text" name="salario" id="salario" />
+                    </label>
+                </div>
+            </fieldset>
+            <div class="textarea">
+                <label for="atividades">Descrição das Atividades <br/>
+                    <textarea name="atividades" id="atividades" cols="90" rows="10">Dê uma descrição bem detalhada das suas atividades.</textarea>
+                </label>
+            </div>
+            <br/>
+            <fieldset class="periodo">
+                <div class="periodo">
+                    <label for="periodo">Período <br/>
+                        <input type="date" name="periodo" id="periodo"> 
+                    </label>
+                </div>
+                <div>
+                    <p>até</p>
+                </div>
+                <div>
+                    <input type="date" name="periodo" id="periodo"> 
+                </div>
+                <div>
+                    <input type="checkbox">Emprego atual
+                </div>
+            </fieldset>
+            <div>
+                <button>+ Adicionar experiência</button>
+            </div>
+            <br/>  <br/>
+            <hr>
+            <div class="subtitulo">
+                <h2>Formação Acadêmica e Complementar</h2>
+            </div>
+            <fieldset>
+                <div class="l1">
+                    <label for="instituicao">Nome da Instituição  <br/>
+                        <input type="text" name="instituicao" id="instituicao"  required />
+                    </label>
+                </div>
+                <div>
+                    <label for="formacao">Formação <br/>
+                        <select name="formacao" id="formacao">
+                            <option value="m">Ensino Médio</option>
+                            <option value="mt">Ensino Médio-Técnico</option>
+                            <option value="f">Ensino Fundamental</option>
+                            <option value="s">Superior Completo</option>
+                            <option value="si">Superior Incompleto</option>
+                            <option value="pg">Pós Graduação</option>
+                            <option value="dr">Doutorado</option>
+                            <option value="ms">Mestrado</option>
+                        </select>
+                    </label>
+                </div>
+            </fieldset>
+            <div>
+                <label for="curso">Curso  <br/>
+                    <input type="text" name="curso" id="curso" />
+                </label>
+            </div>
+            <br/>
+            <div>
+                <label for="complementar">Informações Complementares <br/>
+                    <textarea name="atividades" id="atividades" cols="90" rows="10">Descreva aqui qualquer diferenciação que houver nesta formação. (Ex. Habilitações, ou matériais opcionais)</textarea>
+                </label>
+            </div>
+            <br/>
+            <fieldset class="periodo">
+                <div class="periodo">
+                    <label for="periodo">Período <br/>
+                        <input type="date" name="periodo" id="periodo"> 
+                    </label>
+                </div>
+                <div>
+                    <p>até</p>
+                </div>
+                <div>
+                    <input type="date" name="periodo" id="periodo"> 
+                </div>
+                <div>
+                    <input type="checkbox">Cursando
+                </div>
+            </fieldset>
+            <div>
+                <button>+ Adicionar formação</button>
+            </div>
+            <br/>  <br/>
+            <hr>
+            <div class="subtitulo">
+                <h2>Resumo Profissional</h2>
+            </div>
+            <div>
+                <textarea name="atividades" id="atividades" cols="90" rows="10">Faça um breve resumo sobre  vocêm contando brevemente suas experiências.</textarea>
+                </label>
+            </div>
+            <br/>
+            <button id="enviar">enviar</button>
         </form>
     </div>
     <script src="index.js"></script>
