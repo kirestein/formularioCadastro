@@ -31,14 +31,14 @@
 // }
 // yearList()
 
-function  estadoCivil() {
-    let estadoCivil =  document.getElementById('estado-civil')
-    let lista = new  Array('casado',  'solteiro', 'viúvo', 'divorciado', 'união estável')
-    for (let i = ''; i < lista.length; i++) {
-        let option  = document.createElement("option")
-        option.value = i
-        option.name = i
-        estadoCivil.appendChild(option)
-    }
-}
-estadoCivil()
+// function  estadoCivil() {
+//     let estadoCivil =  document.getElementById('estado-civil')
+//     let lista = new  Array('casado',  'solteiro', 'viúvo', 'divorciado', 'união estável')
+//     for (let i = ''; i < lista.length; i++) {
+//         let option  = document.createElement("option")
+//         option.value = i
+//         option.name = i
+//         estadoCivil.appendChild(option)
+//     }
+// }
+// estadoCivil()
